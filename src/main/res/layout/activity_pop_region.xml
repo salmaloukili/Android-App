@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.PopRegionActivity">
+
+    <RelativeLayout
+        android:id="@+id/bannerChooseRegions"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/pastel_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitleRegions"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="30dp"
+            android:text="Choose continents"
+            android:textAlignment="center"
+
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerChooseRegions"
+        app:layout_constraintVertical_bias="0.120000005">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbAllRegions"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="-15dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbAllRegions"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbRegion1"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbAllRegions"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbRegion1"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbRegion3"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbRegion1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="149dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbRegion3"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbRegion2"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbRegion3"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="149dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbRegion2"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbRegion4"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbRegion2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="149dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbRegion4"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbRegion5"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cbRegion4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="149dp"
+                android:buttonTint="@color/purple_700"
+                android:text="@string/cbRegion5"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/bannerChooseNrQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="-3dp"
+        android:background="@color/pastel_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.106">
+
+        <TextView
+            android:id="@+id/txtTitleNrQuestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="30dp"
+            android:text="Choose number of questions"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnTypeQuizDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:onClick="btnDone_onClick"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        app:icon="@android:drawable/ic_media_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Spinner
+        android:id="@+id/spNrQuestions"
+        android:layout_width="102dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/purple_700"
+        android:contentDescription="@string/choice3"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/nrOfQuestions"
+        android:foregroundTint="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerChooseNrQuestions"
+        app:layout_constraintVertical_bias="0.146" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

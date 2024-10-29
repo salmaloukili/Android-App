@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="126dp">
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/pastel_pink"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018">
+
+            <Button
+                android:id="@+id/btnBackMain"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/purple_500"
+                android:contentDescription="@string/descriptionBtnHome"
+                android:drawableTop="?attr/actionModeCloseDrawable"
+                android:drawableTint="@color/white"
+                android:onClick="btnGoToMain_onClick"
+                android:padding="10dp" />
+
+            <ImageView
+                android:id="@+id/avatarImage"
+                android:layout_width="wrap_content"
+                android:layout_height="111dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/titlePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-150dp"
+                android:text="@string/titleUserPage"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="463dp"
+            android:layout_height="798dp"
+            android:layout_below="@+id/banner"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/txtNameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtNrQuizzesPlayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtAvgScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/btnChangeUsername"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:onClick="btnChangeUsername_onClick"
+                android:text="@string/editUsername"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:onClick="btnGoToMain_onClick"
+                android:text="@string/editPassword"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

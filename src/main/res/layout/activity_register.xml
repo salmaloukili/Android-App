@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <EditText
+        android:id="@+id/txtNewUsername"
+        android:layout_width="291dp"
+        android:layout_height="54dp"
+        android:capitalize="none"
+        android:ems="10"
+        android:hint="@string/hint_username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/txtNewPassword"
+        android:layout_width="291dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="@string/hint_newPassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="@+id/txtNewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtNewPassword2"
+        android:layout_width="296dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/hint_newPassword2"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPassword"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <EditText
+        android:id="@+id/txtNewEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textWebEmailAddress|textAutoComplete|textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="@+id/txtNewUsername"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewUsername"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDoneRegister"
+        android:layout_width="303dp"
+        android:layout_height="52dp"
+        android:onClick="btnRegister_onClick"
+        android:text="DONE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtNewPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPassword2"
+        app:layout_constraintVertical_bias="0.403" />
+</androidx.constraintlayout.widget.ConstraintLayout>
